@@ -1,0 +1,11 @@
+{
+  "email": "you@example.com",
+  "secret": "39468d28666a431e73d98d891e1e2f09f2167e4e580f97577c3e748b34ebf850",
+  "task": "captcha-solver-demo-123",
+  "round": 1,
+  "nonce": "abc-123",
+  "brief": "Create a captcha solver that handles ?url=... Default to attached sample.",
+  "checks": ["Repo has MIT license","README.md is professional"],
+  "evaluation_url": "https://httpbin.org/anything",
+  "attachments": []
+}
