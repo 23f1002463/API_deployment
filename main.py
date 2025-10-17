@@ -20,9 +20,9 @@ def get_required_env(name: str) -> str:
 
 EXPECTED_SECRET = get_required_env("STUDENT_SECRET")
 
-@app.get("/healthz")
-def healthz():
-    return {"ok": True}
+@app.get("/")
+def read_root(): 
+    return { "message": "🚀 Welcome to the LLM Code Deployment API!", "usage": { "docs": "/docs", "main_endpoint": "/api/task", "example": "POST a JSON task request to /api/task" } }
 
 @app.post("/api/task", response_model=Ack)
 async def receive_task(req: TaskRequest, background: BackgroundTasks):
